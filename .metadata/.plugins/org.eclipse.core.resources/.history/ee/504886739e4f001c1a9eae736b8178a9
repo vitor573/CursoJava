@@ -1,0 +1,16 @@
+package streams;
+
+public class Discos {
+
+	final String titulo, artista;
+	final double preco;
+	
+	public Discos(String titulo, String artista, double preco) {
+		super();
+		this.titulo = titulo;
+		this.artista = artista;
+		this.preco = preco;
+	}
+	
+	
+}

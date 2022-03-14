@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;soma&apos; in &apos;lambdas.CalculoTesteLambda.main(...)&apos; to &apos;calc&apos;&#x0D;&#x0A;- Original project: &apos;exercicios&apos;&#x0D;&#x0A;- Original element: &apos;lambdas.CalculoTesteLambda.main(String[]).soma&apos;&#x0D;&#x0A;- Renamed element: &apos;soma&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;soma&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;lambdas{CalculoTesteLambda.java[CalculoTesteLambda~main~\[QString;@soma!102!142!110!113!QCalculo;!0!false" name="calc" references="true" stamp="1636979485893" version="1.0"/>
+</session>

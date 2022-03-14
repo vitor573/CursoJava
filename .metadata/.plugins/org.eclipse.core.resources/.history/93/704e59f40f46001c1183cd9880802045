@@ -1,0 +1,9 @@
+package lambdas;
+
+public class CalculoTesteLambda {
+
+	public static void main(String[] args) {
+		Calculo soma = (x, y) ->{return x + y; };//aplicação da lambda, como no teste 1 sem o lambda mas de forma mais simples
+		System.out.println(soma.executar(5, 10));
+	}
+}

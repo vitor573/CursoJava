@@ -1,0 +1,19 @@
+package Classe;
+
+public class EqualsHashcode {
+
+	public static void main(String[] args) {
+		 usuario u1 = new usuario();
+		 u1.nome = "Pedro Silva";
+		 u1.email ="pedro.sil@gmail.com";
+		 
+		 usuario u2 = new usuario();
+		 u2.nome = "Pedro Silva";
+		 u2.email ="pedro.sil@gmail.com";
+		 
+		 System.out.println(u1 == u2); // resultado sera falso pois esse teste busca pelos caminhos onde a variavel esta salva.
+		 System.out.println(u1.equals(u2));
+		 System.out.println(u2.equals(u1));
+		 
+	}
+}

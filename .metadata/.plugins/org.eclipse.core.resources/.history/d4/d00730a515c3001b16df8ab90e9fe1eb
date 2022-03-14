@@ -1,0 +1,26 @@
+package Classe;
+
+public class Produto {
+
+	String nome;
+	double preco;
+	double desconto;
+	// aqui criamos variaveis que vão ser usadas em outras classes
+	
+	Produto(){
+		//contrutor padão para que usemos ele precisamos criar pois abaixo colocamos parametros para ele 
+	}
+	
+	Produto(String nomeInicial, double precoInicial, double descontoInicial){//construtor
+		nome = nomeInicial; //ao usar o contrutor com tributos perdemos o contrutor padrão 
+		preco = precoInicial;
+		desconto = descontoInicial;
+	}
+	
+	 double precoComDesconto() {
+		 return preco * (1-desconto);//usamos return preferencialmente pois assim o valor é mostrado em todas as plataformas
+	 }
+	 double precoComDesconto(double descontoDoGerente) {// pode existir mais de uma classe com mesmo nome mas com parametros diferentes
+		 return preco *(1- desconto + descontoDoGerente);
+	 }
+}

@@ -1,0 +1,15 @@
+
+public class TesteRapido {
+public static void main(String[] args) {
+	int a,b,c,i;
+	a = 0;
+	b = 1;
+	
+	for(i=0; i>=10; i++) {
+		c = b;
+		b = b + a;
+		a = c;
+	}
+	System.out.println(b);
+}
+}

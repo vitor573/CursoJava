@@ -1,0 +1,16 @@
+package Classe;
+
+public class AreaCircTest {
+
+	public static void main(String[] args) {
+		
+		AreaCirc a1 = new AreaCirc(15);
+		//a1.pi = 10;
+		
+		//AreaCirc.pi =3.1415; o ultimo valor atribuido para a variavel será o valor usado para a realização do calculo. da forma como foi declarado o valor fica associado a classe e não a instancia  
+		System.out.println(a1.area());
+		
+		System.out.println(AreaCirc.area(100));
+	} 
+	
+}

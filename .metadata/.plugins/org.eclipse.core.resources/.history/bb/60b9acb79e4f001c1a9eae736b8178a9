@@ -1,0 +1,27 @@
+package streams;
+
+
+import java.util.Arrays;
+import java.util.List;
+import java.util.function.Function;
+import java.util.function.Predicate;
+
+
+public class DesafioFilter {
+
+	public static void main(String[] args) {
+		Discos d1 = new Discos("Dark side of the moon", "Pink floyd", 200.0, false);
+		Discos d2 = new Discos("Relaxer", "Alt-J", 350.0, true);
+		Discos d3 = new Discos("Hey jude", "Beatle", 250.0, true);
+		Discos d4 = new Discos("Alucinação", "Belchior", 150.0, true);
+		Discos d5 = new Discos("Xuxa", "Xuxa", 30.0, false);
+		
+		List<Discos> discos = Arrays.asList(d1, d2, d3, d4, d5);
+		
+		Predicate<Discos> raro = r -> r.raro == true;
+		Predicate<Discos> valioso = v -> v.preco >= 200.0;
+		Function<Discos, String> formata = f -> "O disco " + f.titulo + " do(a) " + f.artista + " e custa " + f.preco;
+		
+		discos.stream().filter(valioso).filter(raro).map(formata).forEach(utilitarios.prin);
+	}
+}

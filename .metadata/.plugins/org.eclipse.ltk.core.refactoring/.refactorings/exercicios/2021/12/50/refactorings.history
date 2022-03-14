@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;exceção.personalizadaA&apos; to &apos;exercicios/src/exceção.personalizadaA&apos;&#x0D;&#x0A;- Original project: &apos;exercicios&apos;&#x0D;&#x0A;- Destination element: &apos;exercicios/src/exceção.personalizadaA&apos;&#x0D;&#x0A;- Original element: &apos;exercicios/src/exceção.personalizadaA&apos;" description="Copy package" destination="/src&lt;exceção.personalizadaA" element1="/src&lt;exceção.personalizadaA" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1639059369301" version="1.0"/>
+</session>

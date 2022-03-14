@@ -1,0 +1,22 @@
+package exceção.personalizadaA;
+
+import exceção.Aluno;
+
+public class TesteValidacao {
+
+	public static void main(String[] args) {
+		
+		try {
+			Aluno aluno = new Aluno("Ana", 1                                          7);
+			Validar.aluno(aluno);
+			
+			Validar.aluno(null);
+		} catch (StringVaziaExcepition e) {
+			System.out.println(e.getMessage());
+		} catch (NumeroNegativoExcepition | IllegalArgumentException e) {
+			System.out.println(e.getMessage());
+		}
+		
+		System.out.println("Fim");
+	}
+}

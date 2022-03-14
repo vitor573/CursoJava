@@ -1,0 +1,13 @@
+package lambdas;
+
+public class CalculoTesteLambda {
+
+	public static void main(String[] args) {
+		Calculo calc = (x, y) ->{return x + y; };//aplicação da lambda, como no teste 1 sem o lambda mas de forma mais simples
+		// a lambda precisa retornar o mesmo tipo e receber os mesmos numeros de parametros da função originaria
+		System.out.println(calc.executar(5, 10));
+		
+		calc = (x, y) -> x * y;// ao omitir os pares de chaves o return estara implicito
+		System.out.println(calc.executar(5, 10));
+	}
+}
